@@ -1,0 +1,22 @@
+# Site settings
+
+title: Vergil's Downfall
+email: i@lichun.me
+name:
+
+description: >
+        if you want find programmer, <br/>
+        你要失望了，因为我只是个逗比
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://lichun.me" # the base hostname & protocol for your site
+
+twitter_username:     lichun19960112  # Replace this with your Twitter username
+github_username:      lichun19960112  # Replace this with your GitHub username
+linkedin_username:    lichun19960112  # Replace this with your LinkedIn username
+# google_plus_username: lichun19960112  # Replace this with your Google+ username
+facebook_username:    lichun19960112  # Replace this with your Facebook username
+# dribbble_username:    lichun19960112  # Replace this with your Dribbble username
+
+# Build settings
+markdown: kramdown
