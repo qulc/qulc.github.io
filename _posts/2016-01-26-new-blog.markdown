@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "博客换了个新样式"
+date:   2016-01-26
+categories: record
+---
+
+<img src='http://7u2knn.com1.z0.glb.clouddn.com/D2291FB5-B59F-49CF-8FD4-82640676ED8F.png'/>
+
+原先那个Jekyll极简的样式也觉得丑了点，新年换新
+
+旧的文章也全删了，以后少写字多发图

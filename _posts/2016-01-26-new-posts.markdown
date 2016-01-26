@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "看看翻页效果"
+date:   2016-01-26
+categories: record
+---
+
+<img src='http://7u2knn.com1.z0.glb.clouddn.com/BAAF67C5-F376-4360-B5AD-55A8B2A2007D.gif'/>
+
+RT
