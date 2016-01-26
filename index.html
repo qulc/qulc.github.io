@@ -9,7 +9,7 @@ layout: default
         {% for post in site.posts limit:1 %}
             <header class="major">
                 <h2>{{ post.title }}</h2>
-                <p class="post-meta">{{ post.date | date: "%Y-%M-%d" }}
+                <p class="post-meta">{{ post.date | date: "%Y-%m-%d" }}
                     {% if post.author %}
                          • {{ post.author }}
                     {% endif %}
