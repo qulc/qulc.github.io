@@ -20,3 +20,4 @@ facebook_username:    lichun19960112  # Replace this with your Facebook username
 
 # Build settings
 markdown: kramdown
+highlighter: pygments
