@@ -3,6 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>rainyday.js demo #1</title>
+        
+        <style>
+          .content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            z-index: 100;
+            }
+        </style>
+        
         <style media="screen">
             body {
                 overflow: hidden;
@@ -33,7 +44,10 @@
         </script>
     </head>
     <body onload="run();">
-        <h1> <a href="http://lichun.me">lichun.me</a> | 屈利春 </h1>
+        <div class="content">
+            <h1> <a href="http://lichun.me">lichun.me</a>|屈利春</h1>
+        </div>
+        <q>Life is a playground, or nothing.</q>
         <img id="background" alt="background" src="" />
     </body>
 </html>
