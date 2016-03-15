@@ -1,23 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
-
-title: Vergil's Downfall
+title: blog
 email: i@lichun.me
-name: 屈利春
-
-description: >
-        if you want find programmer, <br/>
-        you will disappointed，because i just am doubi!
-
-baseurl: "" # the subpath of your site, e.g. /blog/
+description: > # this means to ignore newlines until "baseurl:"
+    Life is a playground, or nothing.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lichun.me" # the base hostname & protocol for your site
-
-twitter_username:     lichun19960112  # Replace this with your Twitter username
-github_username:      lichun19960112  # Replace this with your GitHub username
-linkedin_username:    lichun19960112  # Replace this with your LinkedIn username
-# google_plus_username: lichun19960112  # Replace this with your Google+ username
-facebook_username:    lichun19960112  # Replace this with your Facebook username
-# dribbble_username:    lichun19960112  # Replace this with your Dribbble username
+twitter_username: lichun19960112
+github_username:  lichun19960112
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
