@@ -35,12 +35,13 @@ code {
   -webkit-transform: translate3d(0, 0, 1px);
   transform: translate3d(0, 0, 1px); }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 800px) {
   .post-listing {
     height: 100vh;
     overflow-y: scroll;
     position: initial;
-    top: 0; } }
+    top: 0; } 
+    }
 section.post {
   margin-bottom: 80px; }
 
@@ -100,14 +101,14 @@ section.post {
   text-align: center;
   font-family: "Consolas", "Monaco"; }
 
-.name {
-  color: white;
-  display: block; }
-
-.name a {
+.card a {
   color: white;
   text-decoration: none; 
 }
+
+.name {
+  color: white;
+  display: block; }
 
 .description {
   font-size: 18pt;
@@ -121,9 +122,4 @@ a:hover {
 .back {
     color: rgba(0, 0, 0, 0.87);
     text-decoration: none; 
-}
-
-.svg {
-    width: 10%;
-    height: 10%;
 }
