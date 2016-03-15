@@ -5,11 +5,9 @@ date:   2016-01-26
 categories: record
 ---
 
-<img src="http://7u2knn.com1.z0.glb.clouddn.com/json_format.png" width='80%' height='80%'/>
+<img src="http://7u2knn.com1.z0.glb.clouddn.com/json_format.png"/>
 
 上图是改过的Json结构，下面是原先定义的结构 
-
-*(不爱吐槽这破wiki编辑器了，不支持markdown，能添加代码块，但蠢货们不会去用，粘贴一坨屎一样的代码就放里面, 特么的你好歹敲几个空格对齐吧!)*
 
 {% highlight python %}
 {
@@ -30,7 +28,8 @@ categories: record
 
 ### 说怕`list`在迭代中顺序变了。。。。
 
+<img src="http://7u2knn.com1.z0.glb.clouddn.com/532EC2F3-A3BC-4F8F-87C1-0C7E0AEED6A1.jpg"/>
+
 所以要把`list` 改成`dict`, 然后拿1, 2, 3, ... 9, 当`key`
 
-<img src="http://7u2knn.com1.z0.glb.clouddn.com/532EC2F3-A3BC-4F8F-87C1-0C7E0AEED6A1.jpg"/>
 

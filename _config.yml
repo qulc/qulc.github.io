@@ -6,14 +6,16 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
+name: 屈利春
 title: 屈利春 lichun.me
 email: i@lichun.me
 description: > # this means to ignore newlines until "baseurl:"
     Life is a playground, or nothing.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://lichun.me" # the base hostname & protocol for your site
 twitter_username: lichun19960112
 github_username:  lichun19960112
 
 # Build settings
 markdown: kramdown
+permalink: none
