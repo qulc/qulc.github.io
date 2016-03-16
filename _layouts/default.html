@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-
     {% include head.html %}
-    
     <body onload="run();">
         <div class="row" >
             <div class="row col s1">
@@ -10,14 +8,15 @@
                 
                 <div class="cover-card">
                     <div class="card">
+                        <img src="img/avatar.jpg" class="avatar"/>
                         <span class="name">
                             <a href="/">{{ site.name }}</a> |
                             <a href="http://about.me/lichunqu">about</a>
                         </span>
-                        <span class="description">{{ site.description }}</span> 
+                        <span class="description">{{ site.description }}</span>
                         <br/>
                         {% include icon-link.html %}
-                    </div>         
+                    </div>
                 </div>
 
             </div>
@@ -27,6 +26,5 @@
                 </div>
             </div>
         </div>
-            
     </body>
 </html>
