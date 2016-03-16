@@ -1,0 +1,16 @@
+{% for post in site.posts %}
+<section class="post">
+    
+    <header class="post-header">
+        <h2 id="{{ post.title }}">
+            <a class="post-title" onclick="viewPosts('{{ post.url }}')">{{ post.title }}</a>
+        </h2>
+        <p class="post-meta">
+            <span class="post-date">{{ post.date | date: "%Y年%m月%d日" }}</span>
+        </p>
+    </header>
+    <div class="post-description">
+        {{ post.excerpt }}
+    </div>
+</section>
+{% endfor %}

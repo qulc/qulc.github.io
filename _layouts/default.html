@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 
     {% include head.html %}
     
     <body onload="run();">
-        
         <div class="row" >
-            <!---->
             <div class="row col s1">
                 <img id="background" src="" />
                 
@@ -23,8 +21,10 @@
                 </div>
 
             </div>
-            <div class="row col s1">
-                {{ content }}
+            <div id="posts" class="row col s1">
+                <div id="post-listing" class="post-listing">
+                    {{ content }}
+                </div>
             </div>
         </div>
             
