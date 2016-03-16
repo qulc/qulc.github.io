@@ -1,10 +1,10 @@
 <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
-    <script src={{ "/js/rainyday.0.1.2.min.js" | prepend: site.baseurl }}></script>
+    <script src={{ "js/rainyday.0.1.2.min.js" | prepend: site.baseurl }}></script>
 
     <script>
         function run() {
@@ -18,7 +18,7 @@
                 engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
             };
             image.crossOrigin = 'anonymous';
-            image.src = '{{ "/img/b.jpeg" | prepend: site.baseurl }}';
+            image.src = '{{ "img/b.jpeg" | prepend: site.baseurl }}';
         }
     </script>
     
