@@ -1,5 +1,9 @@
 function viewPosts() {
     var url = location.hash.replace('#', '');
+
+    if (url == "")
+        url = "/post-listing.html";
+
     httpGetAsync(url, updatePosts);
 }
 
