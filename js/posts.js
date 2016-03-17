@@ -1,9 +1,5 @@
-function goBack() {
-    var url = '/post-listing.html';
-    httpGetAsync(url, updatePosts);
-}
-
-function viewPosts(url) {
+function viewPosts() {
+    var url = location.hash.replace('#', '');
     httpGetAsync(url, updatePosts);
 }
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
     {% include head.html %}
-    <body onload="run();">
-        <div class="row" >
+    <body onload="run(); viewPosts();" onhashchange="viewPosts();">
+        <div class="row">
             <div class="row col s1">
                 <img id="background" src="" />
                 
@@ -11,7 +11,7 @@
                         <img src="img/avatar.jpg" class="avatar"/>
                         <span class="name">
                             <a href="/">{{ site.name }}</a> |
-                            <a href="http://about.me/lichunqu">about</a>
+                            <a href="#/record/resume.html">about</a>
                         </span>
                         <span class="description">{{ site.description }}</span>
                         <br/>
@@ -21,7 +21,7 @@
 
             </div>
             <div id="posts" class="row col s1">
-                <div id="post-listing" class="post-listing">
+                <div id="post-listing" class="post-listing"/>
                     {{ content }}
                 </div>
             </div>
