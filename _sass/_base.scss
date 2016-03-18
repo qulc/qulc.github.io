@@ -131,6 +131,10 @@ section.post {
   color: white;
 }
 
+.card a:hover {
+  color: #F36170;
+}
+
 .avatar {
     border-radius: 50%;
     width: 100px;
@@ -153,3 +157,4 @@ section.post {
     color: rgba(0, 0, 0, 0.87);
     text-decoration: none;
 }
+
