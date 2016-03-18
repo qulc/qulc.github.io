@@ -1,9 +1,13 @@
 function viewPosts() {
     var url = location.hash.replace('#', '');
+    if (url == "" || url == "/")
+        ViewIndex();
 
-    if (url == "")
-        url = "/post-listing.html";
+    httpGetAsync(url, updatePosts);
+}
 
+function viewIndex() {
+    var url = "/post-listing.html";
     httpGetAsync(url, updatePosts);
 }
 
@@ -16,8 +20,12 @@ function httpGetAsync(theUrl, callback)
 {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             callback(xmlHttp.responseText);
+        }
+        else {
+            ViewIndex();
+        }
     }
     xmlHttp.open("GET", theUrl, true); // true for asynchronous 
     xmlHttp.send(null);
