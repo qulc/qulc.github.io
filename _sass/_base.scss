@@ -4,26 +4,39 @@ html {
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-top: 1.5em;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+}
 
 body {
   overflow: hidden;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
   
 code {
-  font-family: "Consolas", "Monaco"; }
+  font-family: "Consolas", "Monaco";
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F36170;
+}
 
 #background {
   width: 100%;
   height: 100%;
-  z-index: -1; }
+  z-index: -1;
+}
 
 .post-listing {
   background-color: #fff;
@@ -33,29 +46,36 @@ code {
   width: 100%;
   padding: 20px 20px 0;
   -webkit-transform: translate3d(0, 0, 1px);
-  transform: translate3d(0, 0, 1px); }
+  transform: translate3d(0, 0, 1px);
+}
 
 @media only screen and (min-width: 800px) {
-  .post-listing {
-    height: 100vh;
-    overflow-y: scroll;
-    position: initial;
-    top: 0; } 
+      .post-listing {
+        height: 100vh;
+        overflow-y: scroll;
+        position: initial;
+        top: 0;
     }
+}
+
 section.post {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+}
 
 .post-title {
   font-weight: 300;
   color: rgba(0, 0, 0, 0.87);
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .post-header {
-  margin: 20px auto; }
+  margin: 20px auto;
+}
 
 .post-meta {
   font-size: 13px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .post-meta .post-date {
   color: #F36170; 
@@ -63,16 +83,19 @@ section.post {
 
 .post-description {
   font-size: 15px;
- }
+
+}
 
 .row {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 .row:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 .row .col {
   float: left;
@@ -81,11 +104,13 @@ section.post {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  width: 100%; }
+  width: 100%;
+}
 
 .row .col.s1 {
   width: 50%;
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 .cover-card {
   top: 0px;
@@ -99,11 +124,11 @@ section.post {
   margin-top: 20%;
   font-size: 24pt;
   text-align: center;
-  font-family: "Consolas", "Microsoft Yahei", "Monaco"; }
+  font-family: "Consolas", "Microsoft Yahei", "Monaco";
+}
 
 .card a {
   color: white;
-  text-decoration: none; 
 }
 
 .avatar {
@@ -115,15 +140,13 @@ section.post {
 
 .name {
   color: white;
-  display: block; }
+  display: block;
+}
 
 .description {
   font-size: 18pt;
   display: block;
-  color: white; }
-
-a:hover {
-  color: #F36170; 
+  color: white;
 }
 
 .back {
