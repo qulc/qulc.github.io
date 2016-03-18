@@ -1,14 +1,16 @@
 function viewPosts() {
     var url = location.hash.replace('#', '');
-    if (url == "" || url == "/")
-        ViewIndex();
 
-    httpGetAsync(url, updatePosts);
+    if (url == "" || url == "/") {
+        viewIndex();
+        return null;
+    }
+    httpGet(url);
 }
 
 function viewIndex() {
     var url = "/post-listing.html";
-    httpGetAsync(url, updatePosts);
+    httpGet(url);
 }
 
 function updatePosts(data) {
@@ -20,13 +22,24 @@ function httpGetAsync(theUrl, callback)
 {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) 
             callback(xmlHttp.responseText);
-        }
-        else {
-            ViewIndex();
-        }
     }
     xmlHttp.open("GET", theUrl, true); // true for asynchronous 
     xmlHttp.send(null);
+}
+
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+
+    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+        updatePosts(xmlHttp.responseText);
+    }
+    else {
+        viewIndex();
+    }
+    return xmlHttp.responseText;
 }
