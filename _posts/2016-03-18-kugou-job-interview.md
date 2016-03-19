@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "记录一次酷狗音乐面试经历[附笔试题]"
-date:   2016-03-19
+date:   2016-03-18
 categories: record
 ---
 
