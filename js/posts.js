@@ -6,6 +6,10 @@ function viewPosts() {
         return null;
     }
     httpGet(url);
+
+    var disqus = document.getElementById('disqus');
+    if (disqus)
+        eval(disqus.textContent);
 }
 
 function viewIndex() {
@@ -22,7 +26,7 @@ function httpGetAsync(theUrl, callback)
 {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
             callback(xmlHttp.responseText);
     }
     xmlHttp.open("GET", theUrl, true); // true for asynchronous 
