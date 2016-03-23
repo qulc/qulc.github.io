@@ -1,5 +1,5 @@
 <head>
-    <meta charset="utf-8" name="msvalidate.01" content="1960F587D234A6C5BD70B3A79318525E" />
+    <meta charset="utf-8"/>
 
     <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -22,6 +22,14 @@
             image.src = '{{ "img/background.jpg" | prepend: site.baseurl }}';
         }
     </script>
+    <!-- Google Analytics -->
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-75479437-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
 
     <title>{{ site.title }}</title>
 </head>
