@@ -46,7 +46,7 @@ class C(A):
 1 2 1
 >>> A.x = 2
 >>> print(A.x, B.x, C.x)
-3 2 3
+2 2 2
 {% endhighlight %}
 
 ## 第3页: 数据库和Linux相关的问题
