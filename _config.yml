@@ -10,7 +10,7 @@ name: 屈利春
 title: 屈利春 lichun.me
 email: i@lichun.me
 description: > # this means to ignore newlines until "baseurl:"
-    Life so fuck, I'm Python Develper.
+    Life so fuck, I'm Python Developer.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://lichun.me" # the base hostname & protocol for your site
 twitter_username: lichun19960112
