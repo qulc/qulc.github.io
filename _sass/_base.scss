@@ -91,7 +91,7 @@
 }
 .post .content code {
   font-family: "Roboto Mono", "Menlo", "Consolas", monospace;
-  font-size: 13px;
+  font-size: 14px;
   background-color: #f6f6f6;
   padding: 3px 10px;
   margin: 0 5px;
@@ -102,6 +102,7 @@
   font-size: 13px;
   overflow-x: auto;
   text-align: left;
+  text-indent: -1em;
   padding: 15px 25px;
   background-color: #f6f6f6;
   line-height: 1.5em;
