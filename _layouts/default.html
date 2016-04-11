@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-    {% include head.html %}
-    <body onload="run(); viewPosts();" onhashchange="viewPosts();">
-        <div class="row">
-            <div class="row col s1">
-                <img id="background" src="" />
-                
-                <div class="cover-card">
-                    <div class="card">
-                        <img src="img/avatar.jpg" class="avatar"/>
-                        <span class="name">
-                            <a href="/">{{ site.name }}</a> |
-                            <a href="#/record/resume.html">about</a>
-                        </span>
-                        <span class="description">{{ site.description }}</span>
-                        <br/>
-                        {% include icon-link.html %}
-                    </div>
-                </div>
-
-            </div>
-            <div id="posts" class="row col s1">
-                <div id="post-listing" class="post-listing"/>
-                    {{ content }}
-                </div>
+<!-- saved from url=(0018)http://evanyou.me/ -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>{{ site.title }}</title>
+        
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link href="/css/index.css" rel="stylesheet" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <h1>{{ site.name }}</h1>
+            <h2>{{ site.description }}</h2>
+            
+            <div id="icon-link">
+                {% include icon-link.html %}
             </div>
         </div>
+        
+        {{ content }}
+        
+        <canvas width="1478" height="884"></canvas>
+        
+        {% include touchmove.html %}
+        {% include google-analytics.html %}
     </body>
 </html>
