@@ -25,5 +25,5 @@ categories: record
 
 ## 逻辑试题 (这个比较坑了，貌似所有岗位都会有的试题)
 
-### 单独整理了一份记录 <a href="#/record/kugou-job-questions.html">酷狗Python后台开发面试题</a>
+### 单独整理了一份记录 <a href="/record/kugou-job-questions.html">酷狗Python后台开发面试题</a>
 
