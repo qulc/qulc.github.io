@@ -12,9 +12,7 @@ email: i@lichun.me
 description: > # this means to ignore newlines until "baseurl:"
     Life so fuck, I'm Python Developer.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://lichun.me" # the base hostname & protocol for your site
-twitter_username: lichun19960112
-github_username:  lichun19960112
+url: "https://lichun.me" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
