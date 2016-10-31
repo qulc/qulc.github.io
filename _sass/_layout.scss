@@ -1,5 +1,4 @@
 body {
-  // font-family: "Roboto", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, serif;
   font-family: "Montserrat", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, sans-serif;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
@@ -44,13 +43,7 @@ a {
   width: 15px;
   height: 15px;
 }
-.header,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.header, h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, sans-serif;
   font-weight: 400;
   color: #444;
