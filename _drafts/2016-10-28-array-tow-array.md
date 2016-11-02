@@ -53,7 +53,12 @@ def group_array(one_array, group_num):
 
 变成了一行代码解决系列
 
-
+{% highlight python %}
+# 反过来，二维数组合并为一维
+>>> two_array = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11]]
+>>> sum(two_array, [])
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+{% endhighlight %}
 
 {% highlight python %}
 # 在网上看到有个相关的问题, 分成 n*n 的二维数组
