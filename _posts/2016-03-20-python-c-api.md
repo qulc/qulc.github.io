@@ -84,4 +84,3 @@ Out: 3
 * Python的类型与C语言类型可以相互转换。`PyXXX_AsYYY；PyXXX_FromYYY`。
 * Python类型的变量可以使用`PyXXX_New`创建, 若a是`Tuple，a[i] = b` 对应 `PyTuple_SetItem(a,i,b)`。
 * Python不仅语言很优雅，Python的库函数API也非常优雅。
-
