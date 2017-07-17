@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "酷狗Python后台开发面试题"
+title:  "酷狗 Python 后台开发面试题"
 date:   2016-03-18
 categories: record
 ---
@@ -9,7 +9,7 @@ categories: record
 
 ## 第1页: 就是图上的基础知识选择&填空题
 
-## 第2页: 写代码输出结果, 就是考验Python容易犯错的陷阱
+## 第2页: 写代码输出结果, 就是考验 Python 容易犯错的陷阱
 
 *酷狗给的示例代码也太丑了点, 不贴上来了.*
 *试题上不是这两份代码, 但知识点是这两个*
@@ -49,28 +49,30 @@ class C(A):
 2 2 2
 {% endhighlight %}
 
-## 第3页: 数据库和Linux相关的问题
+## 第 3 页: 数据库和 Linux 相关的问题
 
 * 简述数据库的连接查询
-* 什么是SQL注入，如何防范
+* 什么是 SQL 注入，如何防范
 * 数据库索引的优点与不足，建立索引应该遵循哪些规则?
-* 内容为Hello World的文件，在执行`echo abc >> file`之后内容为？
-* 写一条crontab配置, 每周六，日重启Nginx, 并将执行结果写入`/dev/null`
+* 内容为 Hello World 的文件，在执行`echo abc >> file`之后内容为？
+* 写一条 crontab 配置, 每周六，日重启 Nginx, 并将执行结果写入`/dev/null`
 
 
-## 4~5页: 算法题, 代码实现 [下面代码是我的答案]
+## 4~5 页: 算法题, 代码实现 [下面代码是我的答案]
 
-### 找出数组中出现次数超过数组长度一半的值并打印，例如: [0, 2, 4, 5, 2, 2, 2], 2 出现的次数为4 并超过数组长度一半，则输出2
+### 找出数组中出现次数超过数组长度一半的值并打印，例如: [0, 2, 4, 5, 2, 2, 2], 2 出现的次数为 4 并超过数组长度一半，则输出 2
 {% highlight python %}
 from collections import Counter
 
 data = [0, 2, 4, 5, 2, 2, 2]
+max_len = len(data) / 2
 
-for key, value in Counter(data).items():
-    if value > (len(data) / 2):
-        print(key)
+for value, count in Counter(data).items():
+    if count > max_len:
+        print(value)
 
-Out: 2
+# Out:
+2
 {% endhighlight %}
 
 ### 已知字符串的字符是各不相同的，求任意拼接的所有组合。例：'ab', 则输出'aa', 'ab', 'ba', 'bb'
@@ -81,7 +83,8 @@ from itertools import permutations
 result = [''.join(str_tuple) for str_tuple in permutations('ab')]
 print(result)
 
-Out: ['ab', 'ba']
+# Out:
+['ab', 'ba']
 
 {% endhighlight %}
 
@@ -92,32 +95,30 @@ from itertools import product
 result = [''.join(str_tuple) for str_tuple in product('ab', 'ab')]
 print(result)
 
-Out: ['aa', 'ab', 'ba', 'bb']
+# Out:
+['aa', 'ab', 'ba', 'bb']
 {% endhighlight %}
 
-### 20个降序排列数组, 每个包含500个数字, 找出其中500个最大的数字
+### 20 个降序排列数组, 每个包含 500 个数字, 找出其中 500 个最大的数字
 {% highlight python %}
-# 生成20个包含500个数字倒序排列的list
-data = {}
+# 生成 20 个包含 500 个数字倒序排列的 list
+twenty_five_hundred_numbers = [list(range(500, 0, -1))]  * 20
 
-for key in range(20):
-    value = list(range(500))
-    value.reverse()
-    data.update({key: value})
+# 已经降序排列的结果，可以直接取前面的值
+end = int(500 / 20)
 
-# 找出每个list中最大的数字
-max_num_list = []
+result = []
+for numbers in twenty_five_hundred_numbers:
+    result += numbers[:end]
 
-while len(max_num_list) <= 500:
-    for key, value in data.items():
-        max_num_index = value.index(max(value))
-        max_num_list.append(value.pop(max_num_index))
+print(result)
 
-result = max_num_list[:500]
+# Out:
+[500, 499, 498, 497, 496...]
 {% endhighlight %}
 
 
-## 逻辑试题 (我全选的C，题目都没仔细看过)
+## 逻辑试题 (我全选的 C，题目都没仔细看过)
 
 在网上也找到了其中一道题目,
 
@@ -133,6 +134,6 @@ result = max_num_list[:500]
 
 > D．对日常饮食中钙足量的一个孕妇和一个非孕妇进行检测，并分别确定她们是否缺钙
 
-### 三短一长选最长，额，正确答案是D啊。。。。
+### 三短一长选最长，额，正确答案是 D 啊
 
-就是10道这种类型的题目, 挺耗时间的, 又被催时间到了，索性全填了C
+就是 10 道这种类型的题目, 挺耗时间的, 又被催时间到了，索性全填了 C
