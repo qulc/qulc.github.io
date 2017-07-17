@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Code Review的一些看法"
+title:  "Code Review 的一些看法"
 date:   2016-10-22
 categories: record
 ---

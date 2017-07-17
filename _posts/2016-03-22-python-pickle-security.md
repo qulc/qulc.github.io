@@ -6,8 +6,8 @@ categories: record
 ---
 
 {% highlight python %}
-# pickle可以序列化Python的任何数据结构. 包括Class&Function
-# `Celery` 的默认序列化机制就是pickle
+# pickle 可以序列化 Python 的任何数据结构. 包括 Class & Function
+# `Celery` 的默认序列化机制就是 pickle
 >>> import pickle
 >>> 
 >>> class Fuck(object):
@@ -26,11 +26,11 @@ categories: record
 
 <https://docs.python.org/3/library/pickle.html>
 
-### 在Python文档上看到这么一句警告，想想这个不安全的特性应该是怎么利用的
+### 在 Python 文档上看到这么一句警告，想想这个不安全的特性应该是怎么利用的
 
 <https://docs.python.org/3.5/library/pickle.html?highlight=__reduce__#pickling-class-instances>
 
-### 通过文档发现pickle在序列化`Class`时会执行`__reduce__`函数, 且不止这一个
+### 通过文档发现 pickle 在序列化`Class`时会执行`__reduce__`函数, 且不止这一个
 
 
 {% highlight python %}
@@ -39,22 +39,22 @@ categories: record
 >>> class Fuck(object):
 ...    foo = 'shit'
 ...    
-...    # `__reduce__`按要求时需要返回一个tuple
-...    # 返回结果第一个元素为可调用的对象，第二个元素是参数以tuple方式传入，
+...    # `__reduce__`按要求时需要返回一个 tuple
+...    # 返回结果第一个元素为可调用的对象，第二个元素是参数以 tuple 方式传入，
 ...    def __reduce__(self):
 ...        print('reduce runing')
 ...	   return (print, (self.foo,))
 ... 
-# dumps序列化操作时会执行`__reduce__`函数, 
+# dumps 序列化操作时会执行`__reduce__`函数, 
 >>> packed = pickle.dumps(Fuck())
 reduce runing
-# 在进行loads反序列化操作时会执行`__reduce__`返回的函数
+# 在进行 loads 反序列化操作时会执行`__reduce__`返回的函数
 >>> pickle.loads(packed)
 shit
 {% endhighlight %}
 
 
-### 所以知道为什么不要用pickle反序列化未知来源的数据了, 
+### 所以知道为什么不要用 pickle 反序列化未知来源的数据了
 
 {% highlight python %}
 import pickle

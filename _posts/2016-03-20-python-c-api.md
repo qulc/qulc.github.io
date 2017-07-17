@@ -9,7 +9,7 @@ categories: record
 
 示例环境: `macOS, Clang, Python3.5`
 
-## 1. 使用C调用Python
+## 1. 使用 C 调用 Python
 
 编写一个 Python 方法代码
 {% highlight python %}
@@ -80,7 +80,8 @@ Out: 3
 
 
 ## 从上述代码可以窥见 Python 内部运行的方式：
-* Python 的所有元素，`module、function、tuple、string` 等等，实际上都是 `PyObject`。
-* Python 的类型与 C 语言类型可以相互转换。`PyXXX_AsYYY；PyXXX_FromYYY`。
-* Python 类型的变量可以使用 `PyXXX_New` 创建, 若 a 是 `Tuple，a[i] = b` 对应 `PyTuple_SetItem(a,i,b)`。
+* 所有元素 `class、function、list、tuple` 等等，实际上都是 `PyObject`
+* 类型对象都可以使用 `PyXXX_New` 创建
+* 与 C 类型可以相互转换 `PyXXX_AsYYY` `PyXXX_FromYYY`
+* 若 a 是 List, 则 `a[i] = b` 对应 `PyList_SetItem(a, i, b)`
 * Python 不仅语言很优雅，Python 的库函数 API 也非常优雅。

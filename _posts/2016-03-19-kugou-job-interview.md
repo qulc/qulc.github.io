@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "记录一次酷狗音乐面试经历[附笔试题]"
+title:  "记录一次酷狗音乐面试经历 [附笔试题]"
 date:   2016-03-19
 categories: record
 ---
@@ -17,12 +17,12 @@ categories: record
 
 <img src="http://7u2knn.com1.z0.glb.clouddn.com/kugou-job-question.jpg"/>
 
-## 技术笔试题 3张A4纸, 5页。 题目没有想象中困难, 
-* 第1页: 基础知识选择&填空题
-* 第2页: 写代码输出结果
-* 第3页: 简述数据库相关的问题
-* 4~5页: 算法题, 代码实现
+## 技术笔试题 3 张 A4 纸, 5 页。 题目没有想象中困难
+* 第 1 页: 基础知识选择&填空题
+* 第 2 页: 写代码输出结果
+* 第 3 页: 简述数据库相关的问题
+* 4 ~ 5 页: 算法题, 代码实现
 
 ## 逻辑试题 (这个比较坑了，貌似所有岗位都会有的试题)
 
-### 单独整理了一份记录 <a href="/record/kugou-job-questions.html">酷狗Python后台开发面试题</a>
+### 单独整理了一份记录 <a href="/record/kugou-job-questions.html">酷狗 Python 后台开发面试题</a>
