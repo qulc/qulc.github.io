@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lichun love you</title>
+        <style media="screen">
+            body {
+                overflow: hidden;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .text {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                z-index: 100;
+            }
+            p {
+                color: gray;
+                font-family: "Consolas", "Monaco";
+                font-size: 15pt;
+                display: block;
+                text-align: center;
+            }
+            h1 {
+                color: palevioletred;
+                font-family: "Monaco", "Microsoft YaHei";
+                margin-top: 15%;
+                text-align: center;
+            }
+        </style>
+		<script src="http://maroslaw.github.io/rainyday.js/dist/rainyday.0.1.2.min.js"></script>
+        <script>
+            function run() {
+                var image = document.getElementById('background');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this
+                    });
+                    engine.rain([ [1, 2, 8000] ]);
+                    engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
+                };
+                image.crossOrigin = 'anonymous';
+                // image.src = 'http://i.imgur.com/N7ETzFO.jpg';
+                image.src = 'http://7u2knn.com1.z0.glb.clouddn.com/w_hotel.jpg';
+            }
+        </script>
+    </head>
+    <body onload="run();">
+        <div class='text'>
+            <h1> 给下大雨的七夕礼物 </h1>
+            <h1> “我喜欢你啊”  “我知道啊，大傻逼！” </h1>
+            <p> To 张雨 </p>
+        </div>
+
+        <img id="background" alt="background" src="" />
+    </body>
+</html>
+
