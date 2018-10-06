@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <!-- saved from url=(0018)http://evanyou.me/ -->
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>{{ site.title }}</title>
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link href="/css/index.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    </head>
-    <body>
-        <div id="wrapper">
-            <h1>{{ site.name }}</h1>
-            <h2>{{ site.description }}</h2>
-            <div id="icon-link">
-                {% include icon-link.html %}
-            </div>
+
+<head>
+    <title>{{ site.title }}</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>{{ site.name }}</h1>
+        <h2>{{ site.description }}</h2>
+        <div id="icon-link">
+            {% include icon-link.html %}
         </div>
-        <canvas width="1478" height="884"></canvas>
-        {% include touchmove.html %}
-        {% include google-analytics.html %}
-    </body>
+    </div>
+    <canvas width="1478" height="884"></canvas>
+    {% include touchmove.html %}
+    {% include google-analytics.html %}
+</body>
+
 </html>
